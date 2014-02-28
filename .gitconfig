@@ -1,10 +1,9 @@
 [user]
-	name = Han
-	email = laughinghan@gmail.com
+	name = Michael Desa
+	email = mjdesa@gmail.com
 [merge]
 	conflictstyle = diff3
 [diff]
-	REMOVE-ME-TO-ENABLE-external = /Users/Han/git-opendiff.sh
 	tool = Kaleidoscope
 [core]
 	excludesfile = ~/.gitignore

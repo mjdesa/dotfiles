@@ -53,7 +53,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # some more ls aliases
 #alias ll='ls -l'
-#alias la='ls -A'
+alias la='ls -A'
 #alias l='ls -CF'
 
 # Alias definitions.
@@ -73,7 +73,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 export NODE_PATH=/usr/local/lib/node_modules
-export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin
+# export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin
 
 export EDITOR=vim
 
