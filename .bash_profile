@@ -1,15 +1,19 @@
-##
-# Your previous /Users/Han/.bash_profile file was backed up as /Users/Han/.bash_profile.macports-saved_2011-05-25_at_10:38:30
-##
+export CLOJURESCRIPT_HOME=$HOME/clones/clojure/clojurescript
 
-# MacPorts Installer addition on 2011-05-25_at_10:38:30: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
+export GOPATH=$HOME/go
+# PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/michaeldesa/go/bin:/Users/michaeldesa/.cabal/bin
 
-
-# Setting PATH for ActivePython 2.6
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin:$CLOJURESCRIPT_HOME/bin
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
+
+# {{{
+# Node Completion - Auto-generated, do not touch.
+## shopt -s progcomp
+## for f in $(command ls ~/.node-completion); do
+##  f="$HOME/.node-completion/$f"
+##  test -f "$f" && . "$f"
+## done
+# }}}
