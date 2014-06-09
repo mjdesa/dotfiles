@@ -1,9 +1,10 @@
 export CLOJURESCRIPT_HOME=$HOME/clones/clojure/clojurescript
 
 export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 # PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/michaeldesa/go/bin:/Users/michaeldesa/.cabal/bin
 
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin:$CLOJURESCRIPT_HOME/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$CLOJURESCRIPT_HOME/bin
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
