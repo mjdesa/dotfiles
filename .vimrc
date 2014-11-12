@@ -1,5 +1,16 @@
 call pathogen#infect()
 
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+vnoremap <Down> gj
+vnoremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
+
 " Vi-mode sucks
 set nocompatible
 set backspace=indent,eol,start
