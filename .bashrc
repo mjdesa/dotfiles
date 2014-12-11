@@ -28,7 +28,12 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[0;32m\]\u@\h\[\033[00m\]:\[\033[0;34m\]\w\[\033[00m\]\$ '
+## OLD PS1
+# PS1='${debian_chroot:+($debian_chroot)}\[\033[0;32m\]\u@\h\[\033[00m\]:\[\033[0;34m\]\w\[\033[00m\]\$ '
+
+## NEW PS1
+PS1='\[\033[0;34m\]\w\[\033[00m\]\$ '
+
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -46,6 +51,9 @@ PS1="$EXIT_CODE$PS1"
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+# neovim alais
+alias nv='nvim'
 
 # enable color support of ls and bash through environment variables
 export CLICOLOR=1
