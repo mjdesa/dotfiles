@@ -1,15 +1,11 @@
-call pathogen#infect()
+execute pathogen#infect()
 
-nnoremap j gj
-nnoremap k gk
-vnoremap j gj
-vnoremap k gk
-nnoremap <Down> gj
-nnoremap <Up> gk
-vnoremap <Down> gj
-vnoremap <Up> gk
-inoremap <Down> <C-o>gj
-inoremap <Up> <C-o>gk
+filetype plugin indent off
+
+
+set rtp+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
 
 " Vi-mode sucks
 set nocompatible
@@ -17,8 +13,8 @@ set backspace=indent,eol,start
 
 " auto-syntax highlight
 filetype plugin indent on
-syntax on
-colorscheme desert
+"syntax on
+" colorscheme desert
 
 set showcmd " show multi-char commands as you type
 set expandtab autoindent shiftwidth=2 tabstop=2 softtabstop=2 " indent settings
@@ -82,3 +78,14 @@ let g:ctrlp_switch_buffer = 0
 
 " Disable auto-folding of Markdown: https://github.com/plasticboy/vim-markdown#options
 let g:vim_markdown_folding_disabled=1
+
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+vnoremap <Down> gj
+vnoremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
