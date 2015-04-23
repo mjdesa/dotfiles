@@ -4,7 +4,9 @@ export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 # PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/michaeldesa/go/bin:/Users/michaeldesa/.cabal/bin
 
-export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$CLOJURESCRIPT_HOME/bin
+#export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+#export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$PATH:$GOBIN:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc

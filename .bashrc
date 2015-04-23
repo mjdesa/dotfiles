@@ -1,3 +1,8 @@
+  export NVM_DIR=~/.nvm
+  source $(brew --prefix nvm)/nvm.sh
+
+  eval "$(hub alias -s)"
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -84,7 +89,7 @@ export NODE_PATH=/usr/local/lib/node_modules
 # export PATH=$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin
 
 # export EDITOR=vim
-export EDITOR=nvim
+export EDITOR=vim
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 

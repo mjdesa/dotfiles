@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/System/Library/Extensions/PPPoE.ppp/Contents/PlugIns/PPPoE.kext/Contents/MacOS'
-let g:netrw_dirhist_2='/System/Library/Extensions/webcontentfilter.kext'
-let g:netrw_dirhist_3='/System/Library/Extensions/webcontentfilter.kext/Contents'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/mjd/clojure/mjdesa/Bewilde/src'
+let g:netrw_dirhist_2='/Users/mjd/clojure/mjdesa/Bewilde/src/Bewilde'
+let g:netrw_dirhist_3='/Users/mjd/GA/wdi-17/stuff/files'
+let g:netrw_dirhist_4='/Users/mjd/GA/wdi-17/stuff/files/models'
