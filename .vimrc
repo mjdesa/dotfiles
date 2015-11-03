@@ -1,5 +1,7 @@
 execute pathogen#infect()
 
+let g:airline#extensions#tabline#enabled = 1
+
 filetype plugin indent off
 filetype plugin indent on
 syntax on
@@ -24,7 +26,7 @@ set backspace=indent,eol,start
 filetype plugin indent on
 "syntax on
 " colorscheme desert
-
+"
 set showcmd " show multi-char commands as you type
 set expandtab autoindent shiftwidth=2 tabstop=2 softtabstop=2 " indent settings
 set laststatus=2 " for Powerline
@@ -57,6 +59,9 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 au BufNewFile,BufRead *.ejs set filetype=js
+
+cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
+cnoreabbrev <expr> Q ((getcmdtype() is# ':' && getcmdline() is# 'Q')?('q'):('Q'))
 
 " search
 set gdefault " default substitute all matches on each line, g flag toggles

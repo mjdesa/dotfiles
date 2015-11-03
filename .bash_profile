@@ -1,13 +1,5 @@
 export CLOJURESCRIPT_HOME=$HOME/clones/clojure/clojurescript
 
-export GOPATH=$HOME/go
-export GOBIN=$GOPATH/bin
-# PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/michaeldesa/go/bin:/Users/michaeldesa/.cabal/bin
-
-#export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
-#export PATH=$PATH:/usr/local/opt/go/libexec/bin
-export PATH=$PATH:$GOBIN:/Applications/Postgres.app/Contents/Versions/9.4/bin
-
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
@@ -25,3 +17,17 @@ fi
 # The orginal version is saved in .bash_profile.pysave
 # PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export PATH
+[[ -s "/Users/michaeldesa/.gvm/scripts/gvm" ]] && source "/Users/michaeldesa/.gvm/scripts/gvm"
+
+gvm use go1.5.1 > /dev/null
+
+
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+# PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/michaeldesa/go/bin:/Users/michaeldesa/.cabal/bin
+
+#export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+#export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH=$GOBIN:/usr/local/bin:$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+
+ssh-add ~/workspace/influxdb-customers/lib/ssh/influxdb-customers &> /dev/null

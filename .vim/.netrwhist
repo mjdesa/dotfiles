@@ -1,6 +1,6 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/mjd/clojure/mjdesa/Bewilde/src'
-let g:netrw_dirhist_2='/Users/mjd/clojure/mjdesa/Bewilde/src/Bewilde'
-let g:netrw_dirhist_3='/Users/mjd/GA/wdi-17/stuff/files'
-let g:netrw_dirhist_4='/Users/mjd/GA/wdi-17/stuff/files/models'
+let g:netrw_dirhist_1='/Users/michaeldesa/go/src/github.com/influxdb/influxdb/stress'
+let g:netrw_dirhist_2='/Users/michaeldesa/go/src/github.com/influxdb/influxdb/stress/generator'
+let g:netrw_dirhist_3='/Users/michaeldesa/go/src/github.com/mjdesa/stress_gen'
+let g:netrw_dirhist_4='/Users/michaeldesa/go/src/github.com/influxdb/influxdb/stress/new'

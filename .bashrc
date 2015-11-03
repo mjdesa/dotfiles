@@ -1,3 +1,5 @@
+[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
   export NVM_DIR=~/.nvm
   source $(brew --prefix nvm)/nvm.sh
 
@@ -59,6 +61,9 @@ alias egrep='egrep --color=auto'
 
 # neovim alais
 alias nv='nvim'
+
+# to to go influx
+alias cdi='cd $GOPATH/src/github.com/influxdb'
 
 # enable color support of ls and bash through environment variables
 export CLICOLOR=1
@@ -173,3 +178,6 @@ On_ICyan='\e[0;106m'    # Cyan
 On_IWhite='\e[0;107m'   # White
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+PERL_MB_OPT="--install_base \"/Users/michaeldesa/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/michaeldesa/perl5"; export PERL_MM_OPT;
